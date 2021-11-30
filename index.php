@@ -15,11 +15,6 @@
                 
                 
             </div>
-
-        </form>
-        
-        
-          
-    </div>
-        
+        </form>         
+    </div>        
 <?php include("assets/PHP/template/footer.php");?>
