@@ -41,7 +41,7 @@ if ($already_exist != true ){
     $result = $pdo->prepare($sql_insert)->execute([$prenom, $nom, $birthday, $date]);
     
     if ($result) {
-        echo "<p>données enregistrées </p>";
+        echo "<p>Données enregistrées </p>";
     }
     else
     {
