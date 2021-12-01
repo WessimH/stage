@@ -13,26 +13,59 @@
     src: url("../font/Montserrat/Montserrat-BoldItalic.ttf")
 }      
 
+.logo{
+    position: absolute;
+width: 269px;
+height: 86px;
+left: 31px;
+top: 0px;
 
+background: url(../img/logo.png);
+}
 form button{
+    position: absolute;
     border-radius: 20px;
     background-color: #FFAE78;
     color: #ffffff;
     width: 350px;
     height: 70px;
+    left: 545px;
+    top: 371px;
     text-align: center;
+    padding: 17px, 99px;
+    margin: 23px;
+    
     
 }
 form button:hover{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }   
 form button:active{
+    
     background-color: white;
     color: #FFAE78;
     border-color: #FFAE78;
 }
 form input{
+    position: absolute;
     border-radius: 20px;
     border-color: #FFAE78;
     color: #FFAE78;
+}
+footer{
+    position: absolute;
+    width: 1440px;
+    height: 114px;
+    left: 0px;
+    top: 910px;
+    
+    background: linear-gradient(270deg, #FFAE78 0%, #FF4949 48.82%, #FF834F 100%);
+}
+.nav_barre{
+    position: absolute;
+    width: 1440px;
+    height: 10px;
+    left: 0px;
+    top: 104px;
+    background: #FF834F;
 }
