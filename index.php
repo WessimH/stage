@@ -11,15 +11,10 @@
                 <input type="date" name="birthday" max="<?php echo date('Ymd')?>">
                 <input type="passworld">
                     <input type="submit" class="button">
-                </div>
-                
-                
+                </div>                                
             </div>
-
         </form>
-        
-        
-          
-    </div>
+        </div>
+        <?php include("assets/JavaScript/maps.js")?>
         
 <?php include("assets/PHP/template/footer.php");?>
