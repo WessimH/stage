@@ -13,8 +13,13 @@
                     <input type="submit" class="button">
                 </div>                                
             </div>
+<<<<<<< HEAD
         </form>
         </div>
         <?php include("assets/JavaScript/maps.js")?>
         
+=======
+        </form>         
+    </div>        
+>>>>>>> a22cea655e5453c892bf0fb8530e455a68425072
 <?php include("assets/PHP/template/footer.php");?>
