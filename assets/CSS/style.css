@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @font-face {
     font-family: "Montserrat-Black";
     src: url("../font/Montserrat/Montserrat-Black.ttf");
@@ -10,8 +11,13 @@
 
 
     font-family:"Monsterrat-BoldItalic";
-    src: url("../font/Montserrat/Montserrat-BoldItalic.ttf")
+    src: url("../font/Montserrat/Montserrat-BoldItalic.ttf");
+
+    font-family: "Montserrat";
+    src: url("../font/Montserrat/Montserrat-Regular.ttf");
 }      
+
+
 /*header*/
 .logo{
     position: absolute;
@@ -22,6 +28,8 @@ top: 0px;
 
 background: url(../img/logo.png);
 }
+
+
 .nav_barre{
     position: absolute;
     width: 1440px;
@@ -30,6 +38,25 @@ background: url(../img/logo.png);
     top: 104px;
     background: #FF834F;
 }
+
+.login{
+    position: absolute;
+    width: 54px;
+    height: 23px;
+    left: 1375px;
+    top: 11px;
+    
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #000000;
+}
+
 /*object*/
 form button{
     position: absolute;
@@ -43,25 +70,56 @@ form button{
     text-align: center;
     padding: 17px, 99px;
     margin: 23px;
-    
-    
+    border:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    line-height: 37px;    
 }
+
 form button:hover{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }   
+
 form button:active{
     
-    background-color: white;
-    color: #FFAE78;
-    border-color: #FFAE78;
-}
-form input{
-    position: absolute;
+    background: #FCFCFC;
+    border: 3px solid #FFAE78;
+    box-sizing: border-box;
     border-radius: 20px;
-    border-color: #FFAE78;
-    color: #FFAE78;
+    color:#FFAE78 ;
+    
 }
+
+
+
+
+form input{
+
+    border-radius: 20px;
+    border : 3px solid #FFAE78;
+    width: 350px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*form input:focus-visible {
+}*/
+
+
+
+
+
+
 /*tableau*/
+
+
+
 table {
     border: medium solid #FF4949;
     border-collapse: collapse;
@@ -95,5 +153,5 @@ footer{
     left: 0px;
     top: 910px;
     
-    background: linear-gradient(270deg, #FFAE78 0%, #FF4949 48.82%, #FF834F 100%);
+    background: linear-gradient(270deg, #FFAE78 0%, #FF4949 48.82%, #8f8b89 100%);
 }
