@@ -10,12 +10,6 @@ if( isset($_POST['nom'  ] )&& isset($_POST['prenom']) ) // On vérifie si le for
 
 ?>
 
-<style>
-tr{
-    border: solid 1px red;
-}
-
-</style>
 
 <table border="1" cellspacing="5">
     <thead>
@@ -49,6 +43,8 @@ tr{
         </tr>";
     }
 
+
     ?>
     </tbody>
+    
 </table>

@@ -8,25 +8,29 @@
     
     font-family: "Monsterrat-Bold";
     src:url("../font/Montserrat/Montserrat-Bold.ttf");
-
-
+    
+    
     font-family:"Monsterrat-BoldItalic";
     src: url("../font/Montserrat/Montserrat-BoldItalic.ttf");
-
+    
     font-family: "Montserrat";
     src: url("../font/Montserrat/Montserrat-Regular.ttf");
 }      
 
 
 /*header*/
+header{
+    border-bottom-color: linear-gradient(270deg, #FFAE78 0%, #FF4949 48.82%, #8f8b89 100%);
+    border-bottom-width:10px ;
+}
 .logo{
     position: absolute;
-width: 269px;
-height: 86px;
-left: 31px;
-top: 0px;
-
-background: url(../img/logo.png);
+    width: 269px;
+    height: 86px;
+    left: 31px;
+    top: 0px;
+    
+    background: url(../img/logo.png);
 }
 
 
@@ -94,7 +98,7 @@ form button:active{
 
 
 form input{
-
+    
     border-radius: 20px;
     border : 3px solid #FFAE78;
     width: 350px;
@@ -124,27 +128,29 @@ table {
     border: medium solid #FF4949;
     border-collapse: collapse;
     width: 50%;
-    }
-    th {
+}
+th {
     font-family: monospace;
     border: thin solid #FF834F;
     width: 50%;
     padding: 5px;
     background-color: #D0E3FA;
-
-    }
-    td {
+    
+}
+td {
     font-family: sans-serif;
     border: thin solid #FF834F;
     width: 50%;
     padding: 5px;
     text-align: center;
     background-color: #ffffff;
-    }
-    caption {
+}
+caption {
     font-family: sans-serif;
-    }
-    
+}
+
+
+
 /*footer*/
 footer{
     position: absolute;
@@ -154,4 +160,72 @@ footer{
     top: 910px;
     
     background: linear-gradient(270deg, #FFAE78 0%, #FF4949 48.82%, #8f8b89 100%);
+}
+/*switch buttton*/
+
+
+
+
+#toggle_checkbox
+{
+    display: none;
+}
+
+label
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 140px;
+    height: 70px;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+label:before
+{
+    top: 8px;
+    left: 8px;
+    width: 54px;
+    height: 54px;
+    border: 3px solid #FFAE78;
+}
+
+label:after
+{
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 70px;
+    border: 3px solid #143240;
+}
+
+label:before, label:after
+{
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    box-sizing: border-box;
+    transition: 0.5s ease top, 0.5s ease left, 0.5s ease right, 0.5s ease width, 0.5s ease height, 0.5s ease border-color;
+}
+
+#toggle_checkbox:checked + label:before
+{
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 70px;
+    border-color: #143240;
+}
+
+#toggle_checkbox:checked + label:after
+{
+    top: 8px;
+    right: 8px;
+    width: 54px;
+    height: 54px;
+    border-color: #FFAE78;
 }

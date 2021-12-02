@@ -1,7 +1,7 @@
 <?php include("assets/PHP/template/header.php");?>
     <div class="login">
         <div class="title" >
-            <h1>Se connnecter</h1>
+
         </div>
         <form action="assets\PHP\Admin\index.php" method="post">
             <div class="form_style"><br>
