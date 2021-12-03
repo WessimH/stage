@@ -27,7 +27,7 @@ while ($row = $req->fetch()) {
     if ($nom == $row['name'] && $prenom == $row['first_name']) {
         $already_exist = true;
     }
-} //rant que on a pas vu de doublon 
+} //tant que on a pas vu de doublon 
 
 
 if ($already_exist != true) {
