@@ -3,9 +3,9 @@ include("connexion.php"); // declare la variable $pdo pour connexion à la BDD e
 
 date_default_timezone_set('Europe/Paris');
 
-if( isset($_POST['nom'  ] )&& isset($_POST['prenom']) ) // On vérifie si le formulaire a été validé (si la variable existe)
+if (isset($_POST['nom']) && isset($_POST['prenom'])) // On vérifie si le formulaire a été validé (si la variable existe)
 {
-   include("insert_form.php");
+    include("insert_form.php");
 }
 
 ?>
@@ -23,16 +23,16 @@ if( isset($_POST['nom'  ] )&& isset($_POST['prenom']) ) // On vérifie si le for
         </tr>
     </thead>
     <tbody>
-<?php
-    $sql_select = 'SELECT * FROM contact ORDER BY birthday';
-    $req = $pdo->query($sql_select);
-    while($row = $req->fetch()){
-        $id = $row['id'];
-        $nom = $row['name'];
-        $prenom = $row['first_name'];
-        $anniv = $row['birthday'];
-        $date_creation = $row['date_creation'];
-        echo"
+        <?php
+        $sql_select = 'SELECT * FROM contact ORDER BY birthday';
+        $req = $pdo->query($sql_select);
+        while ($row = $req->fetch()) {
+            $id = $row['id'];
+            $nom = $row['name'];
+            $prenom = $row['first_name'];
+            $anniv = $row['birthday'];
+            $date_creation = $row['date_creation'];
+            echo "
         <tr>
             <td>$id</td>
             <td>$nom</td>
@@ -41,10 +41,10 @@ if( isset($_POST['nom'  ] )&& isset($_POST['prenom']) ) // On vérifie si le for
             <td>$date_creation</td>
             <td>Editer / Supprimer</td>
         </tr>";
-    }
+        }
 
 
-    ?>
+        ?>
     </tbody>
-    
+
 </table>
