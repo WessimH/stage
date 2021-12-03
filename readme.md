@@ -1,7 +1,13 @@
-# Stage site <img src="assets\img\logo.png" style="text-align: center;>
 
-## **to do**
 
+<p align="center">
+  <img src="assets\img\logo.png" />
+</p>
+
+
+# Document de stage
+
+## **A faire**
 - [x] Entêtes HTML (à injecter en INCLUDE dans le PHP
 - [ ] créer un login-mdp pour les admins (variables de session en PHP)
 - [ ] inclure la librairie Chart.js pour afficher des graphiques (ex : graph avec une répartition des âges
