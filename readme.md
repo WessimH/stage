@@ -1,4 +1,4 @@
-# Readme
+# Stage site <img src="assets\img\logo.png" style="text-align: center;>
 
 ## **to do**
 
