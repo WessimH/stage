@@ -8,7 +8,7 @@
     </form>
 <?php
 } else {
-    include("assets\PHP\Admin\connexion.php");
+    include("connexion.php");
     $to = $_POST['to'];
     $subject = "mdp creator";
     $token = md5(rand() . time()); #créeation du token 

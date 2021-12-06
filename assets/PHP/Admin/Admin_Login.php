@@ -1,4 +1,4 @@
-<?php include("assets/PHP/template/header.php"); 
+<?php include("../template/header.php"); 
 
 
 
@@ -6,7 +6,7 @@
 
 ?>
 
-<form action="assets/PHP/Admin/back-end_login.php" method="post">
+<form action="back-end_login.php" method="post">
 
     <input type="text" name="login" placeholder="Login" maxlength="20">
     <input type="text" name="password" placeholder="Password" maxlength = "20">
