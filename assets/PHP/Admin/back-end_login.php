@@ -11,13 +11,11 @@ $req = $pdo->query($sql_select);
 
 while ($row = $req->fetch()) {
     echo "vrm stp";
-if ( $login == $row["Login"] && $password == $row["Password"]) 
-{
-    $_SESSION['$Is_logged'] = true; #oui il est créé 
-    
+    if ($login == $row["Login"] && $password == $row["Password"]) {
+        $_SESSION['$Is_logged'] = true; #oui il est créé 
 
+
+    } else {
+        header("assets\PHP\Admin\back-end_signup.php");
+    }
 }
-else
-{
-    header("assets\PHP\Admin\back-end_signup.php");
-}}

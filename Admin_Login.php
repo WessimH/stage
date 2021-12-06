@@ -8,8 +8,8 @@
 
 <form action="assets/PHP/Admin/back-end_login.php" method="post">
 
-    <input type="text" name="login" placeholder="Login" max="20">
-    <input type="text" name="password" placeholder="Password" min = "20">
+    <input type="text" name="login" placeholder="Login" maxlength="20">
+    <input type="text" name="password" placeholder="Password" maxlength = "20">
     <script>
         
     </script>
