@@ -1,6 +1,6 @@
 <?php
-if (isset($_GET["token"])) {
-    $token = $_GET["token"];
+if (isset($_GET["token"])) { #si le token n'est pas défini 
+    $token = $_GET["token"];  #récup le token 
 ?>
     <form action="newmdp.php" method="post">
         <p>mot de passe</p>
@@ -14,12 +14,12 @@ if (isset($_GET["token"])) {
 <?php
 }
 if (isset($_POST['password_confirm'])) {
-    include("assets\PHP\Admin\connexion.php");
+    include("assets\PHP\Admin\connexion.php"); #on inclu la connexion 
     echo "verif mdp";
     $password = $_POST['password'];
     $password_confirm = $_POST['password_confirm'];
     $token_confirm = $_POST['token_confirm'];
-    $options = [
+    $options = [ #on défini le temps par rapport au cryptage 
         'cost' => 11
     ];
 
@@ -30,11 +30,11 @@ if (isset($_POST['password_confirm'])) {
 
 
 
-    if ($password == $password_confirm) {
+    if ($password == $password_confirm) { #on vérifie que les 2 champs correspondent 
         echo "enregistrement des données";
-        $hash = password_hash($password, PASSWORD_BCRYPT, $options);
-        $sql_insert = "UPDATE admin (Password,token) VALUES (?,?) WHERE  token = $token_confirm";
-        $result = $pdo->prepare($sql_insert)->execute([$hash, NULL]);
+        $hash = password_hash($password, PASSWORD_BCRYPT, $options); #on crypte le mdp avec la métode BCRYPT
+        $sql_insert = "UPDATE admin (Password,token) VALUES (?,?) WHERE  token = $token_confirm"; #on UPDATE
+        $result = $pdo->prepare($sql_insert)->execute([$hash, NULL]); #et on envoie
     }
 }
 
