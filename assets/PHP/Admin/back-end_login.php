@@ -11,13 +11,13 @@ $req = $pdo->query($sql_select);
 
 while ($row = $req->fetch()) {
     echo "vrm stp";
-if ( $login == $row["Login"] && $password == $row["Password"])
+if ( $login == $row["Login"] && $password == $row["Password"]) 
 {
-    $_SESSION['$Is_logged'] = true;
-    echo "oui";
+    $_SESSION['$Is_logged'] = true; #oui il est créé 
+    
+
 }
-else{
+else
+{
     header("assets\PHP\Admin\back-end_signup.php");
 }}
-
-echo 'Argon2i hash: ' . password_hash('rasmuslerdorf', PASSWORD_ARGON2I);
