@@ -36,11 +36,22 @@ if (isset($_POST['password_confirm'])) {
         echo "enregistrement des données";
         $hash = password_hash($password, PASSWORD_BCRYPT, $options); #on crypte le mdp avec la métode BCRYPT
         var_dump($hash);
-        $sql_insert = "UPDATE admin 
-        SET PASSWORD = '?',token = '?'  
-        WHERE token = '" . $token_confirm ."'"; #on UPDATE
+        $sql_insert = "UPDATE admin SET PASSWORD = :password, token = :token WHERE token = '" . $token_confirm . "'"; #on UPDATE
+
+
+
+        $req = $pdo->prepare($sql_insert);
+        $req->bindValue('password', $hash); #remplace les variables dans la rquette sql
+        $req->bindValue('token', NULL);
+
+
+
+        echo '\n';
         var_dump($sql_insert);
-        $result = $pdo->prepare($sql_insert)->execute([$hash, NULL]); #et on envoie
+        echo '\n';
+        var_dump($req);
+
+        $req->execute(); #et on envoie la requête préparée
     }
 }
 
