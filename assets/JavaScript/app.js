@@ -1,16 +1,24 @@
-$(document).ready(function()
-{console.log("start")
-    let password = document.getElementById('#password')
+$(document).ready(function(){
+	
+	console.log("start")
+    
+	let password = $('#password')
     let password_confirm = $('#password_confirm')
-    mdp_confirm.change(function () 
+    
+	password_confirm.keyup(function () 
     {
-       console.log("test") 
-       if (MDP.value() == mdp_confirm.value()){
-        console.log("True")
+       console.log(password.val() + ' ' + password_confirm.val()) 
+       if (password.val() != password_confirm.val()){
+        //password_confirm.prop('invalid', true);
+        this.setCustomValidity('les deux mots de passe ne sont pas égaux');
+        console.log("false")
         }
         else {
-        console.log("False")
+        //password_confirm.prop('valid', true);
+        this.setCustomValidity('');
+        console.log("true")
         }
-        })
+        
+    })
     
 })

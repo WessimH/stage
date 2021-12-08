@@ -5,11 +5,12 @@ if (isset($_GET["token"])) { #si le token n'est pas défini
     $token = $_GET["token"];  #récup le token 
 ?>
     <form action="newmdp.php" method="post">
-        <p>mot de passe</p>
-        <input type="password" name="password" min="12" id="password">
+    <p>mot de passe</p>
+        <input type="password" name="password" min="12" id="password" required invalid><span></span>
         <p>confirmez votre mdp</p>
-        <input type="password" name="password_confirm" min="12" id="password_confirm">
-        <input type="text" value="<?= $token ?>" name="token_confirm">
+        <input type="password" name="password_confirm" min="12" id="password_confirm" required invalid><span></span>
+
+        <input type="hidden" value="<?= $token ?>" name="token_confirm">
         <input type="submit">
     </form>
 
