@@ -8,7 +8,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <title>Document</title>
     <link rel="stylesheet" href="assets\CSS\style.css">
-   <script></script>
+
 </head>
 <body>
     <header>
