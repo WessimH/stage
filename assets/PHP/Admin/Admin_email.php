@@ -1,4 +1,6 @@
-<?php if (!isset($_POST['to'])) {
+<?php 
+include("../template/header.php");
+if (!isset($_POST['to'])) {
 
 ?>
     <form action="Admin_email.php" method="post">

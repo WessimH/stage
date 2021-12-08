@@ -1,7 +1,7 @@
 $(document).ready(function()
 {console.log("start")
-    let MDP = document.getElementById('#MDP')
-    let mdp_confirm = $('#password_confirm')
+    let password = document.getElementById('#password')
+    let password_confirm = $('#password_confirm')
     mdp_confirm.change(function () 
     {
        console.log("test") 
