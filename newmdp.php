@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" href="assets/CSS/style.css">
 <script src="assets\JavaScript\jquery-3.6.0.min.js"></script>
 <script src="assets\JavaScript\app.js"></script>
 <?php
@@ -5,7 +7,7 @@ if (isset($_GET["token"])) { #si le token n'est pas défini
     $token = $_GET["token"];  #récup le token 
 ?>
     <form action="newmdp.php" method="post">
-    <p>mot de passe</p>
+        <p>mot de passe</p>
         <input type="password" name="password" min="12" id="password" required invalid><span></span>
         <p>confirmez votre mdp</p>
         <input type="password" name="password_confirm" min="12" id="password_confirm" required invalid><span></span>
