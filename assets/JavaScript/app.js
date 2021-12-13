@@ -15,7 +15,7 @@ $(document).ready(function () {
     if (str.match(/[0-9]/g)) {
 
     }
-    if (str.match(/[A-Z]/g)) {//https://www.journaldunet.fr/web-tech/developpement/1202457-comment-verifier-qu-une-chaine-contient-une-sous-chaine-en-javascript/
+    if (str.match(/[A-Z]/g)) {
     }
     if (str.match(/[a-z]/g)) {
 

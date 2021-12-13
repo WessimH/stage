@@ -31,7 +31,7 @@ rps= rapport de stage
 >   [x]l' id de tes zones d'INPUT
 >   [x]l'id de chacune des tes images ou textes qui vont changer de couleur
 >   [x]l'id de ton bouton (car nous allons desactiver le bouton temps que l'on est pas OK avec les 2 mots de passes confirmés) !
-> [ ] faire les liens
+>   [ ] faire les liens
 
 
 ## **token for github**
