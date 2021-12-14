@@ -23,7 +23,7 @@ rps= rapport de stage
 - [x] faire un shéma des pages + hiérarchie
 - [x]faire un rapport mis en forme de la réu et mettre les notes brut sur le RPS
 - [ ]faire des <span> pour affciher si les caractèrs sont bons 
-- [ ]terminer rapport stage
+- [x]terminer rapport stage
       [ ]etude de cas
 ### a faire a la fin
 
