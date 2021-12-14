@@ -1,8 +1,6 @@
 $(document).ready(function () {
   console.log("start");
 
-  let Is_valid = false;
-
   let password = $("#password");
   let password_confirm = $("#password_confirm");
 

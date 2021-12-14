@@ -21,9 +21,10 @@ rps= rapport de stage
 - [x] checkbox tuto pour [changer les vues](https://www.youtube.com/watch?v=ssesNFcv8lk) _marche pas pour l'instant_
 - [ ] position d'un utilisateur sur un iframe [google maps](https://developers.google.com/maps/documentation/geocoding/overview?hl=en#json) (nécessite la librairie jquery)
 - [x] faire un shéma des pages + hiérarchie
-- [ ]faire un rapport mis en forme de la réu et mettre les notes brut sur le RPS
+- [x]faire un rapport mis en forme de la réu et mettre les notes brut sur le RPS
 - [ ]faire des <span> pour affciher si les caractèrs sont bons 
 - [ ]terminer rapport stage
+      [ ]etude de cas
 ### a faire a la fin
 
 #### _*[ ]design de la page*_
@@ -31,7 +32,7 @@ rps= rapport de stage
 >   [x]l' id de tes zones d'INPUT
 >   [x]l'id de chacune des tes images ou textes qui vont changer de couleur
 >   [x]l'id de ton bouton (car nous allons desactiver le bouton temps que l'on est pas OK avec les 2 mots de passes confirmés) !
->   [ ] faire les liens
+>   [x] faire les liens
 
 
 ## **token for github**
