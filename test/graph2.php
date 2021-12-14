@@ -32,13 +32,13 @@
     $date = $row['birthday'];
     $age_db[] = age($date); // Cette ligne équivaut à array_push($age_db, age($date));  
   }
-  $min = min($age_db);
-  $max = max($age_db);
-  $tab_repartion_age = array_count_values($age_db);  // tableau de la répartition des âges
 
+  $tab_repartion_age = array_count_values($age_db);  // tableau de la répartition des âges
+  ksort($tab_repartion_age);
 
   echo "<script>
 const ctx = document.getElementById('myChart');
+let delayed;
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -67,6 +67,7 @@ const myChart = new Chart(ctx, {
     $str = $str . $value . ", ";
   }
   $str = substr($str, 0, strlen($str) - 1) . "],";
+
   echo $str;
   echo "
             backgroundColor: [
@@ -88,8 +89,23 @@ const myChart = new Chart(ctx, {
             borderWidth: 1
         }]
     },
-    options: {
+    options:{
         indexAxis: 'y',
+          animations: {
+
+
+            x: {
+              easing: 'easeInOutElastic',
+              from: (ctx) => {
+                if (ctx.type === 'data') {
+                  if (ctx.mode === 'default' && !ctx.dropped) {
+                    ctx.dropped = true;
+                    return 0;
+                  }
+                }
+              }
+            }
+          },
         // Elements options apply to all of the options unless overridden in a dataset
         // In this case, we are setting the border of each horizontal bar to be 2px wide
         elements: {

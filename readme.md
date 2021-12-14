@@ -17,7 +17,7 @@ rps= rapport de stage
 - [x]gestion de token dans la base de donnée
 - [x] doublon
 - [x] inclure la librairie Chart.js pour afficher des graphiques (ex : graph avec une répartition des âges)
- - [ ]coder le diagrame
+- [x]coder le diagrame
 - [x] checkbox tuto pour [changer les vues](https://www.youtube.com/watch?v=ssesNFcv8lk) _marche pas pour l'instant_
 - [ ] position d'un utilisateur sur un iframe [google maps](https://developers.google.com/maps/documentation/geocoding/overview?hl=en#json) (nécessite la librairie jquery)
 - [x] faire un shéma des pages + hiérarchie
