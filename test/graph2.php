@@ -27,7 +27,7 @@
   $sql_select = 'SELECT birthday FROM contact';
   $req = $pdo->query($sql_select);
 
-  $age_db = []; // Tableau des différents Age rencontrés
+  $age_db = []; // Tableau des différents Age rencentrés
   while ($row = $req->fetch()) {
     $date = $row['birthday'];
     $age_db[] = age($date); // Cette ligne équivaut à array_push($age_db, age($date));  
