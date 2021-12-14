@@ -40,7 +40,6 @@ if (isset($_POST['password_confirm'])) {
     if ($password == $password_confirm) { #on vérifie que les 2 champs correspondent 
         echo "enregistrement des données";
         $hash = password_hash($password, PASSWORD_BCRYPT, $options); #on crypte le mdp avec la métode BCRYPT
-        var_dump($hash);
         $sql_insert = "UPDATE admin SET PASSWORD = :password, token = :token WHERE token = '" . $token_confirm . "'"; #on UPDATE
 
 
