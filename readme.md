@@ -37,7 +37,7 @@ rps= rapport de stage
 
 ## **token for github**
 
-> nicoll :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
+> nicoll :
 
 ## **Geoapify:**
 
